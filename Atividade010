@@ -1,0 +1,46 @@
+"""
+Exercícios
+
+1) Faça cada quadrado ter uma cor
+2) Faça cada quadrado com um formato diferente da tartaruga
+3) Faça os quadrados não se tocarem
+4) Desenhe um quadrado maior ao redor dos demais quadrados
+"""
+
+import turtle
+
+turtle = turtle.Turtle()
+
+# Definindo cores;
+colors = ['red', 'green', 'blue', 'orange']
+
+# Função para desenhar um quadrado com uma cor específica;
+def draw_colored_square(side_length, color):
+    turtle.fillcolor(color)
+    turtle.begin_fill()
+    for _ in range(4):
+        turtle.forward(side_length)
+        turtle.right(90)
+    turtle.end_fill()
+
+# Colorindo os squares;
+for i in range(len(colors)):
+    draw_colored_square(100, colors[i])
+    turtle.penup()
+    turtle.forward(120) # (Espaçamento entre os quadrados)
+    turtle.pendown()
+
+# Sessão do Quadrado maior!!
+turtle.penup()
+turtle.goto(-5, 5) # Posição inicial do quadrado maior
+turtle.pendown()
+turtle.pensize(2)
+turtle.color('black')
+turtle.forward(500)
+turtle.right(90)
+turtle.forward(350)
+turtle.right(90)
+turtle.forward(500)
+turtle.right(90)
+turtle.forward(350)
+turtle.right(90)

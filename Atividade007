@@ -1,0 +1,26 @@
+"""
+Exercicios:
+
+1) Mude a distancia entre as lentes dos óculos
+2) Mude o tamanho das lentes
+"""
+
+import turtle
+
+turtle = turtle.Turtle()
+turtle.color('black')
+
+#Alterei o range do backward (Antes 100, agora 150).
+for _ in range(4):
+    turtle.left(90)
+    turtle.backward(150)
+
+#Alterei o range do backward (Antes 100, agora 300).
+turtle.backward(50)
+turtle.backward(300)
+turtle.right(90)
+
+#Setei o mesmo valor escolhido na primeira, para ter um resultado uniforme.
+for _ in range(3):
+  turtle.forward(150)
+  turtle.left(90)

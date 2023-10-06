@@ -1,0 +1,29 @@
+"""
+Exercicios
+
+1) Era para ser um envelope. Mas saiu errado. Corrija.
+"""
+
+import turtle
+
+# Configuração inicial;
+t = turtle.Turtle()
+t.color('black')
+t.pensize(2)
+
+# Iniciar o Retângulo;
+t.penup()
+t.goto(50, 0)
+t.pendown()
+
+# Desenho do retângulo;
+t.forward(100)
+t.left(90)
+t.forward(200)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(200)
+
+# Observar.
+turtle.done()
